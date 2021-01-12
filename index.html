@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="converter">
+            <!-- h1 header Temperature Scale Convertor -->
+            <h1>Temperature Scale Converter</h1>
+
+            <!-- label tag for farenheit | value label and input | calculate button  -->
+            <div class="converterForm">
+                <div class="converterFormElement">
+                    <div class="display">
+                        <label for="temperature">Scale</label>
+                    </div>
+                    <div>
+                        <select name="temperature" id="temperature">
+                        <option value="Fahrenheit" class="scale">Fahrenheit</option>
+                        <option value="Celsius" class="scale">Celsius</option>
+                        <option value="Kelvin" class="scale">Kelvin</option>
+                        <option value="Rankine" class="scale">Rankine</option>
+                        </select>
+                    </div>
+                        
+                </div>
+                <div class="converterFormElement display" >
+                    <label for="value">Value</label>
+                    <input type="text" id="inputValue" name="inputValue">
+                </div>
+                <div class="converterFormElement">
+                    <button type="button">Calculate</button>
+                </div>
+            </div>
+            <!-- result div - celsius -->
+            <div class="resultData">
+                <div>
+                    <h2>Fahrenheit</h2>
+                    <h3 id="fahrenheit" class="result"></h3>
+                </div>
+                <div>
+                    <h2>Celsius</h2>
+                    <h3 id="celsius" class="result"></h3>
+                </div>
+                <div>
+                    <h2>Kelvin </h2>
+                    <h3 id="kelvin" class="result"></h3>
+                </div>
+                <div>
+                    <h2>Rankine</h2>
+                    <h3 id="rankine" class="result"></h3>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
